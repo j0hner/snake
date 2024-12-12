@@ -131,6 +131,13 @@ def Refresh():
     if vars.isInMenu:
         DrawFont("S N A K E", BIG_FONT, CLR_WHITE, WIN_CENTER, offset=(0,-200), areCoordsCenter= True)
     
+    if vars.creditsShown:
+        DrawFont("Game by J0hner", MEDIUM_FONT, CLR_WHITE, WIN_CENTER, offset=(0,-200), areCoordsCenter= True)
+        DrawFont("playtesters:", SMALL_FONT, CLR_WHITE, WIN_CENTER, offset=(0,-180), areCoordsCenter= True)
+        playtesters = ["Denis č.", "Tadeáš B.", "Jonáš B."]
+        for i, playtester in enumerate(playtesters):
+            DrawFont(playtester, SMALL_FONT, CLR_WHITE, WIN_CENTER, offset=(0,-150 + i * 14), areCoordsCenter= True)
+    
     for btn in buttons:
         if not btn.isActive: continue
         btn.Draw()

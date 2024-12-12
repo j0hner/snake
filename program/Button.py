@@ -77,6 +77,6 @@ buttons: list[Button] = [Button(BtnPlay, pyg.Rect((WIN_CENTER[0] - 100, WIN_CENT
                          Button(BtnCredits, pyg.Rect((WIN_CENTER[0] - 100, WIN_CENTER[1] - 25),(200,50)), "Credits", SMALL_FONT, CLR_BLACK, CLR_WHITE, "menu", offset=[0,55]),
                          Button(BtnUnstuck, pyg.Rect((0,0),(100,20)), "unstuck", SMALL_FONT, CLR_BLACK, CLR_WHITE, "dbg", False),
                          Button(BtnCredits, pyg.Rect((WIN_CENTER[0] - 100, WIN_CENTER[1] - 25),(200,50)), "Credits", SMALL_FONT, CLR_BLACK, CLR_WHITE, "menu", offset=[0,55]),
-                         Button(BtnCreditsBack, pyg.Rect((WIN_CENTER[0] - 100, WIN_CENTER[1] - 25),(200,50)), "Back", SMALL_FONT, CLR_BLACK, CLR_WHITE, "credits", offset=[0,55], isActive=False)
+                         Button(BtnCreditsBack, pyg.Rect((WIN_CENTER[0] - 100, WIN_CENTER[1] + 75),(200,50)), "Back", SMALL_FONT, CLR_BLACK, CLR_WHITE, "credits", offset=[0,55], isActive=False)
 
 ]
